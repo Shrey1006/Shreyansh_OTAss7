@@ -58,7 +58,7 @@ Options: `--budget N` (default 10000 evaluations), `--seeds K` (default 10), e.g
 | `grad.hpp` | Algs 36 MGDA and 37 GradNorm |
 | `main.cpp` | Registry of the catalogue, metrics, unit tests, all experiments |
 
-## 5. Conventions and honest limitations (read before writing the report)
+## 5. Conventions and honest limitations 
 
 * All objectives are minimised internally (maximisation is negated). HV uses objectives normalised by fixed per-problem bounds and reference point 1.1; Spacing is Schott's; IGD uses the analytic front where available (P1, P2, P3, P6, P7, P10, P13, P14), otherwise the pooled non-dominated union of all runs.
 * Constraints: algorithm 14 (plain NSGA-II) ignores constraints on purpose (to show what happens without them); algorithm 21 and all others use Deb's rules (or an equivalent penalty for scalarising methods).
