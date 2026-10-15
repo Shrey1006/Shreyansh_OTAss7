@@ -1,0 +1,5 @@
+== P11: Goal Programming and Lexicographic ==
+GP unit weights      : xA=300.0 xB=200.0 profit=2400.0 units=500.0  d+ profit=0.00 d+ units=100.00
+GP normalised weights: xA=299.9 xB=200.0 profit=2400.0 units=500.0  d+ profit=0.00 d+ units=100.02
+Lexicographic step 1 (profit only): xA=0.0 xB=400.0 profit=2400.0 units=400.0  <- any point on the edge (300,200)-(0,400) is optimal
+Lexicographic step 2 (units | profit kept): xA=300.0 xB=200.0 profit=2400.0 units=500.0

@@ -1,0 +1,90 @@
+================ TOPSIS (alg 8) on P12 : every number ================
+  col 0 norm = 262.679
+  col 1 norm = 17.1464
+  col 2 norm = 27.3861
+  col 3 norm = 199.331
+  alt 1 weighted-normalised: 0.13705 0.139971 0.0730297 0.0923086 | D+=0.0443745 D-=0.0728322 C=0.6214
+  alt 2 weighted-normalised: 0.114208 0.122474 0.102242 0.0882952 | D+=0.0633844 D-=0.0575399 C=0.475834
+  alt 3 weighted-normalised: 0.159891 0.157467 0.0511208 0.0953187 | D+=0.057104 D-=0.0971337 C=0.629766
+  alt 4 weighted-normalised: 0.102787 0.104978 0.131453 0.0802683 | D+=0.0971337 D-=0.057104 C=0.370234
+  alt 5 weighted-normalised: 0.14847 0.139971 0.0657267 0.0903019 | D+=0.0512989 D-=0.0759973 C=0.597012
+
+================ IBEA (alg 32): tiny instance, population 4 on P1, two iterations, kappa=0.05 ================
+ iteration 1 population (x -> normalised f):
+   x=7.7964  f=(23.0055,0.6343)  fn=(1.4378,0.0396)
+   x=6.7513  f=(14.0721,0.0619)  fn=(0.8795,0.0039)
+   x=7.7693  f=(22.7463,0.5918)  fn=(1.4216,0.0370)
+   x=2.2265  f=(0.5984,22.7867)  fn=(0.0374,1.4242)
+  I_eps(i,j) = max_k (fn_i,k - fn_j,k):
+      0.0000   0.5583   0.0162   1.4004
+     -0.0358   0.0000  -0.0331   0.8421
+     -0.0027   0.5421   0.0000   1.3842
+      1.3845   1.4203   1.3872   0.0000
+  fitness F(x)=sum_j -exp(-I(j,x)/(c*kappa)): -2.6930 -0.0009 -2.3903 -0.0000
+  offspring x: 6.7914 7.7232 1.6301 6.1683
+  environmental selection (8 -> 4):
+  scaling c = 1.79952, kappa = 0.05
+  initial fitness: -6.06663 -1.46391 -5.72573 -0.0165437 -1.63432 -5.01685 -2.4339 -0.110335
+  remove index 0 (fitness -6.06663)
+  remove index 2 (fitness -4.89048)
+  remove index 5 (fitness -3.66238)
+  remove index 6 (fitness -2.4339)
+ iteration 2 population (x -> normalised f):
+   x=6.7513  f=(14.0721,0.0619)  fn=(0.8795,0.0039)
+   x=2.2265  f=(0.5984,22.7867)  fn=(0.0374,1.4242)
+   x=6.7914  f=(14.3745,0.0435)  fn=(0.8984,0.0027)
+   x=6.1683  f=(10.0381,0.6917)  fn=(0.6274,0.0432)
+  I_eps(i,j) = max_k (fn_i,k - fn_j,k):
+      0.0000   0.8421   0.0011   0.2521
+      1.4203   0.0000   1.4215   1.3809
+      0.0189   0.8610   0.0000   0.2710
+      0.0394   0.5900   0.0405   0.0000
+  fitness F(x)=sum_j -exp(-I(j,x)/(c*kappa)): -1.3412 -0.0003 -1.5495 -0.0509
+  offspring x: 6.9515 6.7151 2.1198 6.4457
+  environmental selection (8 -> 4):
+  scaling c = 1.48835, kappa = 0.05
+  initial fitness: -3.43651 -0.421769 -3.68817 -0.325752 -4.1878 -3.05946 -1.16016 -1.24522
+  remove index 4 (fitness -4.1878)
+  remove index 2 (fitness -3.33515)
+  remove index 0 (fitness -2.3869)
+  remove index 5 (fitness -1.42592)
+
+================ MOEA/D-ACO (alg 20): 5-city instance, 2 subproblems, 2 iterations ================
+ distance matrix d and time matrix t are symmetric (given in the code); alpha=1 beta=2 rho=0.1, 2 neighbours, normalisation fmin=(10,10) fmax=(25,30)
+ iteration 1
+  subproblem 0 lambda=(0.001,1)
+    start city 1
+    from 1: probs [0]=0.121267 [2]=0.273072 [3]=0.484395 [4]=0.121267 r=0.0550932 -> 0
+    from 0: probs [2]=0.292401 [3]=0.520546 [4]=0.187053 r=0.832523 -> 4
+    from 4: probs [2]=0.799778 [3]=0.200222 r=0.90071 -> 3
+    from 3: probs [2]=1 r=0.257158 -> 2
+   tour f=(15,25)
+   replaces current solution of subproblem 1
+  subproblem 1 lambda=(1,0.001)
+    start city 0
+    from 0: probs [1]=0.239452 [2]=0.134801 [3]=0.539514 [4]=0.086234 r=0.755745 -> 3
+    from 3: probs [1]=0.0714833 [2]=0.285537 [4]=0.64298 r=0.596189 -> 4
+    from 4: probs [1]=0.639494 [2]=0.360506 r=0.397445 -> 1
+    from 1: probs [2]=1 r=0.308529 -> 2
+   tour f=(13,21)
+   replaces current solution of subproblem 1
+  tau[0] row0: 0.9 0.9 1.16667 1.16667 0.9
+  tau[1] row0: 0.9 0.9 1.4 1.4 0.9
+ iteration 2
+  subproblem 0 lambda=(0.001,1)
+    start city 2
+    from 2: probs [0]=0.184157 [1]=0.184412 [3]=0.0631758 [4]=0.568255 r=0.304005 -> 1
+    from 1: probs [0]=0.158963 [3]=0.634973 [4]=0.206064 r=0.995262 -> 4
+    from 4: probs [0]=0.330123 [3]=0.669877 r=0.993653 -> 3
+    from 3: probs [0]=1 r=0.866543 -> 0
+   tour f=(13,21)
+  subproblem 1 lambda=(1,0.001)
+    start city 4
+    from 4: probs [0]=0.0601998 [1]=0.260028 [2]=0.0942348 [3]=0.585537 r=0.620562 -> 3
+    from 3: probs [0]=0.737057 [1]=0.0526469 [2]=0.210296 r=0.292319 -> 0
+    from 0: probs [1]=0.533131 [2]=0.466869 r=0.0432212 -> 1
+    from 1: probs [2]=1 r=0.0334483 -> 2
+   tour f=(13,19)
+   replaces current solution of subproblem 0
+  tau[0] row0: 0.81 0.963846 1.18333 1.33718 0.81
+  tau[1] row0: 0.81 1.06 1.51 1.76 0.81

@@ -1,0 +1,11 @@
+== Task C sensitivity (10 seeds, budget 10000) ==
+IBEA kappa=0.01 on P3: HV 0.5356 ± 0.0077, IGD 0.0067 ± 0.0027
+IBEA kappa=0.05 on P3: HV 0.5370 ± 0.0001, IGD 0.0085 ± 0.0004
+IBEA kappa=0.25 on P3: HV 0.5165 ± 0.0040, IGD 0.0453 ± 0.0062
+MOEA/D-ACO rho=0.02 on P8: HV 0.7854 ± 0.0113, IGD 0.0091 ± 0.0107
+MOEA/D-ACO rho=0.10 on P8: HV 0.7730 ± 0.0232, IGD 0.0149 ± 0.0139
+MOEA/D-ACO rho=0.50 on P8: HV 0.7203 ± 0.0523, IGD 0.0575 ± 0.0353
+TOPSIS: most important parameter = the weight vector. Shifting weight 0.1 from criterion 2 to criterion 1 (three settings):
+  w=(0.3,0.3,0.2,0.2): order S3 S1 S5 S2 S4
+  w=(0.4,0.2,0.2,0.2): order S1 S2 S3 S5 S4
+  w=(0.5,0.1,0.2,0.2): order S2 S1 S4 S5 S3

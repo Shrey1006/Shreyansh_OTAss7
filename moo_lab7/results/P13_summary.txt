@@ -1,0 +1,9 @@
+== P13(a) toy multi-task problem, start (0,5), 300 steps, step size 0.05 ==
+  fixed 1/2 start L=(13.00,73.00)  step 50 L=(17.846,18.155)  final L=(18.0000,18.0000)  final x=(0.0000,0.0000)
+  MGDA      start L=(13.00,73.00)  step 50 L=(0.500,60.500)  final L=(0.5000,60.5000)  final x=(2.5000,2.5000)
+  GradNorm  start L=(13.00,73.00)  step 50 L=(6.426,35.407)  final L=(5.9251,36.6160)  final x=(1.2788,1.2788)
+  Pareto set is x1=x2 with -3<=x1<=3: MGDA end point on it: yes
+  -- task 2 scaled x50 (large gradients), step 0.001 --
+  fixed 1/2 start L=(13.00,3650.00)  step 50 L=(60.335,29.396)  final L=(69.2041,1.3841)  final x=(-2.8824,-2.8824)
+  MGDA      start L=(13.00,3650.00)  step 50 L=(10.641,3589.220)  final L=(3.9265,3466.5769)  final x=(1.3513,4.0992)
+  GradNorm  start L=(13.00,3650.00)  step 50 L=(38.105,319.633)  final L=(36.2025,306.7559)  final x=(-1.3748,-1.1308)
